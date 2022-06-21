@@ -1,0 +1,266 @@
+/* Margem é a área entre o conteúdo principal da pagina e as bordas da página, que esta sendo declarada como 0
+Padding que é o preenchimento,define uma a distância entre o conteúdo de um elemento e suas bordas que é 0
+Box-sizing,  é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras 
+(widths) e alturas (heights) dos elementos, e o border-box que esta sendo declarada faz com que o
+navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Os h1,h2,h3,h4,h5 e h6 são recursos de programação HTML utilizados para destacar títulos e subtítulos 
+de uma página, elas facilitam a leitura. 
+Font-family, permite que se faça uma lista de prioridades de familias de fontes ou de nomes genéricos de
+famílias a serem especificados para um elemento selecionado.
+Font-weight, é o peso ou a intensidade da fonte, e esta declarado como normal.*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* Aqui definimos a imagem, o blackgorund  é um atalho para definir os valores de fundo individuais em 
+ um único lugar, puxamos a url da imagem que é photographer e o formato da img é .jpg.
+ O dispaly serve para dispor os elementos dentro de um determinado container em linhas ou colunas ele é
+ bastante flexível e permite que você arranje os elementos horizontal ou verticalmente,  o flex organiza os
+ elementos de uma página HTML dentro de seus containers de forma dinâmica.
+ Flex-direction define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo 
+ principal e a direção que é normal ou invertido, que no caso esta em fileira.
+ E o justify-content é a justificação do conteúdo que fica no centro da imagem "no meio da caixa".*/
+
+.img1 {
+  background: url("./img/photographer.jpg") no-repeat center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*As propriedades de texto permite controlar a aparência do texto, é possível mudar a cor do texto,
+ aumentar ou diminuir o espaço entre os caracteres do texto, alinhar um texto, decorar um texto, e recuar a
+ primeira linha dentro de um texto.
+ Aqui foi definido a largura do texto que é o width, a altura que é o height, o display-flex como citado a
+ cima é para organizar os elementos da pagina, aqui nesse caso do texto, o justify content é empregada para
+ alinhar os elementos ao longo do eixo principal, que neste caso esta na direção do centro, o align-items é a
+ propriedade especifica do alinhamento padrão para itens dentro do contêiner flexível, que tambem esta no
+ centro, e o flex-direction define como os itens flexíveis são colocados no contêiner flexível, definindo o
+ eixo principal e a direção como normal ou invertido, que esta em coluna.
+   */
+
+.text {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* No text-1 definimos a cor, que é branco e ao lado é o codigo da cor, o padding  define uma  distância
+   entre o conteúdo de um elemento e suas bordas, então foi declarado entre 24px e 27px
+   A  propriedade border é utilizada para adicionar um contorno ao elemento e está localizada entre o 
+   padding e a margin, é um recurso que ajuda a melhorar a aparência do elemento com a aplicação 
+   de cores, estilo de linha e largura da borda, entao no border-style foi declarado como solido que é o 
+   valor do estilo da borda igual a solid corresponde a uma linha contínua ao redor do elemento ou do lado 
+   indicado, border-width define a largura do elemento como 2px, border-color é usada para adicionar cor 
+   à borda do elemento, e o letter-spacing específica o comportamento do espaçamento entre caracteres do
+  texto como 3px.*/
+
+.text-1 {
+  color: #fff;
+  padding: 24px 27px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(173, 167, 167);
+  letter-spacing: 3px;
+}
+
+/*Text-1 h1, utilizados para destacar títulos e subtítulos da página, font-size  é usada para indicar o 
+ tamanho da letra(fonte), que foi declarada com o tamanho de 48px. */
+
+.text-1 h1 {
+  font-size: 48px;
+}
+
+/*Text-1 h3, para destacar titulos e subtitulos da pagina, font-size é o tamanho da letra(fonte) que é 
+22px, text-align descreve como conteúdo é inline, como texto, é alinhado no elemento pai em bloco, que esta
+no centro, padding-top é a borda superior, que esta sendo declarada como 20px. */
+
+.text-1 h3 {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*. func é o nome da classe da div, o display especifica o tipo de caixa de renderização usada por um elemento enquanto o flex serve para 
+dispor os  elementos dentro de um determinado container em linhas ou colunas, o justify-content
+usado para descrever o alinhamento do contêiner de caixa flexível que esta no centro,  o align-items é a
+propriedade especifica do alinhamento padrão para itens dentro do contêiner flexível, que tambem esta no
+centro, o position  é um recurso usado para ordenar os elementos HTML de uma página web, utilizando o 
+position Relative, você pode alterar o posicionamento do elemento, entao determina que o elemento será
+posicionado de acordo com o fluxo natural da página, e o top  indica o espaço acima do elemento que foi
+declarado como -23px.*/
+
+.func {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -23px;
+}
+
+/* . func é o nome da classe da div e o a é a propriedade que esta dentro da div, a propriedade text-decoration é usada para definir a formatação de underline , overline , 
+line-through ou blink,a propriedade text-decoration desenha em elementos descendentes, que foi declarado
+como nenhuma, color é a cor do texto, o rgb é estilo de como foi declarado a cor e blackground-color é a 
+cor de fundo, definimos o padding que é uma propriedade utilizada para definir o distanciamento interno
+entre o elemento e a borda, e a fonte como 17px.*/
+
+.func a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(246, 240, 240);
+  padding: 8px 15px;
+  font-size: 17px;
+}
+
+  
+  /*O #idhome é um id, o valor que foi declarado pra isso só funciona para que tenha o id, como se fosse 
+   uma classe so que com o id , Border-top-left-radius, é uma propriedade que é usada para arredondar o canto 
+   superior esquerdo de um elemento, que esta sendo declarado como 5px e o border-botom-left-radius são bordas arredondadas 
+   ao canto inferior esquerdo de DOIS elementos, que foi declarado como 5px tambem.*/
+
+#idhome {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* O #idcontact  é um id, é um valor que foi declarado, mas pra isso só funciona para que tenha o id, como se
+  fosse  uma classe, border-top-right-radius é para arredondar o canto superior esquerdo de apenas um 
+  elmento e o border-bottom-right-radius vai arredondar o canto superior esquerda de dois elementos. */
+#idcontact {
+  border-top-right-radius:  5px;
+  border-bottom-right-radius:  5px;
+}
+
+/* . func é o nome da classe da div e o a é a propriedade, hover é uma pseudo-classe da linguagem de estilos
+  que permite a criação de diversos efeitos, blackground-color é a cor de fundo e o rgb é estilo de como foi
+  declarado.*/
+.func a:hover {
+  background-color: rgb(186, 181, 181);
+}
+
+/* A propriedade .content são elementos substituídos anônimos, O display especifica o tipo de caixa de renderização usada por um elemento enquanto o flex serve para 
+dispor os  elementos dentro de um determinado container em linhas ou colunas, o justify-content
+usado para descrever o alinhamento do contêiner de caixa flexível que esta no centro, o align-items é a
+propriedade especifica do alinhamento padrão para itens dentro do contêiner flexível, que tambem esta no
+centro, e o flex-direction define como os itens flexíveis são colocados no contêiner flexível, definindo o
+ eixo principal e a direção como normal ou invertido, que esta em coluna. */
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .content é um id, o margin-bottom define a
+area na parte inferior de um elemento, um valor positivo coloca o valor mais longe de outros elementos 
+vizinhos, enquanto um valor negativo, aproxima, entao foi declarado como 1% então é um valor positivo, vai
+colocar mais longe do elemento vizinho.*/
+
+.content img {
+  margin-bottom: 1%;
+}
+
+/* .contact são elementos substituidos anonimos,  o display especifica o tipo de caixa de renderização usada por um elemento enquanto o flex serve para 
+dispor os  elementos dentro de um determinado container em linhas ou colunas, o flex-direction define como 
+os itens flexíveis são colocados no contêiner flexível, blackground-color é a cor de fundo e o rgb é estilo de como foi
+declarado, width é a largura do texto, height é a altura do texto e a margin-bottom vai definer 
+area na parte inferior de um elemento, que vai ficar positivo, irá colocar mais linge do elemento vizinho.*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 235, 235);
+  width: 66%;
+  height: 570px;
+  margin-bottom: 1%;
+}
+
+/* .contact é apenas uma classe, o -1  é uma continuação do nome, Margin é a área entre o conteúdo 
+principal da pagina e as bordas da página, que esta sendo declarada entre 50px e 30px. */
+
+.contact-1 {
+  margin: 50px 30px;
+}
+
+/*.contact é apenas uma classe, o -1  é uma continuação do nome, text-align descreve como conteúdo é inline, como texto, é alinhado no elemento pai em bloco, que esta
+no centro. */
+
+.contact-1 h3 {
+  text-align: center;
+}
+
+/*.contact é apenas uma classe, o -1  é uma continuação do nome o input é usado para criar controles 
+interativos para formulários, a largura do texto que é o width, a  propriedade border é utilizada para
+adicionar um contorno ao elemento e está localizada entre o padding e a margin, é um recurso que ajuda a
+melhorar a aparência do elemento com a aplicação de cores, estilo de linha e largura da borda, entao no 
+border-style foi declarado como solido, border-width  define a largura do elemento, border color 
+é usada para adicionar cor à borda de um elemento, e o height a altura do texto. */
+
+.contact-1 input {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(213, 210, 210);
+  height: 40px;
+}
+
+/*.contact é apenas uma classe, o -1  é uma continuação do nome, button é um simples botão, com uma largura
+de 100%, blackground-color é a cor de fundo e o rgb é estilo de como foi declarado, com uma cor branca ao
+lado é apenas o codigo da cor, com uma borda, e o padding que é o preenchimento,define uma a distância 
+entre o conteúdo de um elemento e suas bordas.  */
+
+.contact-1 button {
+  width: 100%;
+  background-color: rgb(104, 102, 102);
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+/*.contact é apenas uma classe, o -1  é uma continuação do nome, com uma cor preta e o rgb é estilo de como
+ foi declarado. */
+
+.contact-1 a {
+  color: rgb(0, 0, 0);
+}
+
+/*.contact é apenas uma classe, o -1  é uma continuação do nome o input é usado para criar controles 
+interativos para formulários, o a é a propriedade que esta dentro da div, h3 é recursos de programação HTML
+utilizados para destacar títulos e subtítulos de uma página, elas facilitam a leitura, o p é uma propriedade,
+labem representa uma legenda para um item em uma interface de usuário, e o button é um botão, font-family
+é o tipo de fonte que no caso tem duas, Verdana e sans-serif, font size é o tamanho da fonte que é 15 px, e
+o line-height permite controlar o espaçamento entre as linhas de um texto, que foi declarado 23px
+*/
+
+.contact-1 input,
+a,
+h3,
+p,
+label,
+button {
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+/*.contact é apenas uma classe, o -1  é uma continuação do nome, h3 são recursos de programação HTML 
+utilizados para destacar títulos e subtítulos de uma página, elas facilitam a leitura, e o font-size é o
+tamanho da fonte. */
+
+.contact-1 h3{
+  font-size: 23px;
+}
